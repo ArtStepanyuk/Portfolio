@@ -66,8 +66,6 @@
             Helpful
           </div>
         </div>
-
-
       </div>
 
     </div>
@@ -143,7 +141,7 @@
       <div class="col-md-4">
         <div class="feature-box">
           <div class="feature-box-icon">
-            <i class="icon-group"></i>
+            <i class="fa fa-life-ring fa-lg" aria-hidden="true"></i>
           </div>
           <div class="feature-box-info">
             <h4 class="shorter">Customer Support</h4>
@@ -153,7 +151,7 @@
         </div>
         <div class="feature-box">
           <div class="feature-box-icon">
-            <i class="icon-file"></i>
+            <i class="fa fa-html5 fa-lg" aria-hidden="true"></i>
           </div>
           <div class="feature-box-info">
             <h4 class="shorter">HTML5 / CSS3 / JS</h4>
@@ -166,7 +164,7 @@
       <div class="col-md-4">
         <div class="feature-box">
           <div class="feature-box-icon">
-            <i class="icon-film"></i>
+        <i class="fa fa-bug fa-lg" aria-hidden="true"></i>
           </div>
           <div class="feature-box-info">
             <h4 class="shorter">Bug Fixing</h4>
@@ -176,7 +174,7 @@
         </div>
         <div class="feature-box">
           <div class="feature-box-icon">
-            <i class="icon-magic small user"></i>
+              <i class="fa fa-cloud fa-lg" aria-hidden="true"></i>
           </div>
           <div class="feature-box-info">
             <h4 class="shorter">Deployment</h4>
@@ -190,7 +188,7 @@
 
         <div class="feature-box">
           <div class="feature-box-icon">
-            <i class="icon-reorder"></i>
+            <i class="fa fa-cloud fa-lg" aria-hidden="true"></i>
           </div>
           <div class="feature-box-info">
             <h4 class="shorter">Quality</h4>
@@ -200,7 +198,7 @@
         </div>
         <div class="feature-box">
           <div class="feature-box-icon">
-            <i class="icon-desktop"></i>
+            <i class="fa fa-child fa-lg" aria-hidden="true"></i>
           </div>
           <div class="feature-box-info">
             <h4 class="shorter">Design</h4>
@@ -301,61 +299,17 @@
               <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="clients-title">
                   <h3 class="title">Our <span>Technology</span></h3>
-
-                  <div class="carousel-controls pull-right">
-                    <a data-slide="prev" rel="crs" href="#client-carousel" class="prev btn-mini"><i
-                      class="icon-angle-left"></i></a>
-                    <a data-slide="next" rel="crs" href="#client-carousel" class="next btn-mini"><i
-                      class="icon-angle-right"></i></a>
-
-                    <div class="clearfix"></div>
+                      <uib-carousel active="active" interval="myInterval" no-wrap=true>
+                        <uib-slide ng-repeat="slide in $ctrl.slides"index="slide.id">
+                          <img ng-src="{{slide.image}}" style="margin:auto;">
+                          <div class="carousel-caption">
+                            <p>{{slide.text}}</p>
+                          </div>
+                        </uib-slide>
+                      </uib-carousel>
                   </div>
                 </div>
-                <div class="clearfix"></div>
-                <div class="row">
-                  <div class="client-carousel slide" id="client-carousel">
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1 animate_start">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-1.png" alt="Upportdash"></a></div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d2 animate_start">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-2.png" alt="Upportdash"></a></div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d3 animate_start">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-3.png" alt="Upportdash"></a></div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d4 animate_start">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-4.png" alt="Upportdash"></a></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-5.png" alt="Upportdash"></a></div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-4.png" alt="Upportdash"></a></div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-3.png" alt="Upportdash"></a></div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-                          <div class="item-inner"><a style="cursor: pointer;"><img
-                            src="assets/images/logo-2.png" alt="Upportdash"></a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <!-- Testimonials Widget Start -->
                 <div class="row ">
                   <div class="testimonials widget">
@@ -528,6 +482,6 @@
     </div>
 
   </div>
-
+    <footer></footer>
 
 </section>

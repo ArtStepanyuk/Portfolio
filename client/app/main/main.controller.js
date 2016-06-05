@@ -4,9 +4,17 @@
 
 class MainController {
 
-  constructor($http) {
+  constructor($http, $scope) {
     this.$http = $http;
     this.awesomeThings = [];
+    this.slides = [
+    {
+      image: 'http://moduscreate.com/wp-content/uploads/2014/03/react-opti.png'
+    },
+    {
+      image: 'http://chyngyz.github.io/super-heroic-angular/img/angularjs.png'
+    }
+  ];
   }
 
   $onInit() {
@@ -25,7 +33,10 @@ class MainController {
   deleteThing(thing) {
     this.$http.delete('/api/things/' + thing._id);
   }
+
 }
+
+  var myInterval = 3000;
 
 angular.module('portfolioApp')
   .component('main', {
