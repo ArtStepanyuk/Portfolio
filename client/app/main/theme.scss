@@ -4126,8 +4126,6 @@ p.lead{
 .up-triangle,.down-triangle{
   float: left;
   margin-left: -100px;
-  opacity: 0.8;
-
 }
 
 .up-triangle:first-child{
@@ -4203,6 +4201,7 @@ p.lead{
 }
 .triangles {
   margin-bottom: 40px;
+  opacity: 0.7;
 }
 .triangles .icon{
   font-size: 22pt;
@@ -5375,7 +5374,3 @@ p.lead{
 .tn-rss-alt:before {
   content: "\e75f";
 }
-
-
-
-
