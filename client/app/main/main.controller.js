@@ -55,24 +55,24 @@
 
         // use this refference for CRUD
 
-        $onInit() {
-            this.$http.get('/api/things').then(response => {
-                this.awesomeThings = response.data;
-            });
-        }
+        // $onInit() {
+        //     this.$http.get('/api/things').then(response => {
+        //         this.awesomeThings = response.data;
+        //     });
+        // }
 
-        addThing() {
-            if (this.newThing) {
-                this.$http.post('/api/things', {
-                    name: this.newThing
-                });
-                this.newThing = '';
-            }
-        }
+        // addThing() {
+        //     if (this.newThing) {
+        //         this.$http.post('/api/things', {
+        //             name: this.newThing
+        //         });
+        //         this.newThing = '';
+        //     }
+        // }
 
-        deleteThing(thing) {
-            this.$http.delete('/api/things/' + thing._id);
-        }
+        // deleteThing(thing) {
+        //     this.$http.delete('/api/things/' + thing._id);
+        // }
 
     }
 
