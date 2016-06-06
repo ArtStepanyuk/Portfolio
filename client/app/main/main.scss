@@ -1,57 +1,67 @@
 body {
-  // background-color: #C3C3E5 !important;
-  // overflow: hidden; 
-  background-image: url(../../assets/images/bgMain.jpg)
+  background-image: url('../../assets/images/bgMain.jpg');
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+  display: none;
 }
 
-#portfolio {  
+#portfolio {
+  margin-top: -5px;
   img {
-    max-width: 100%;
     display: block;
+
+    max-width: 100%;
   }
+
   .thumbnail {
     position: absolute;
     top: 50%;
     left: 50%;
+
     width: 320px;
     height: 240px;
-    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome */
-    -moz-transform: translate(-50%, -50%); /* Firefox */
-    -ms-transform: translate(-50%, -50%); /* IE 9 */
-    -o-transform: translate(-50%, -50%); /* Opera */
+
+    -webkit-transform: translate(-50%, -50%); //* Safari and Chrome
+    -moz-transform: translate(-50%, -50%); //* Firefox
+    -ms-transform: translate(-50%, -50%); //* IE 9
+    -o-transform: translate(-50%, -50%); //* Opera
     transform: translate(-50%, -50%);
   }
   .portfolio-block {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
+
   .portfolio-block img {
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -o-transition: all 1s ease; /* IE 9 */
-    -ms-transition: all 1s ease; /* Opera */
+    -webkit-transition: all 1s ease; //* Safari and Chrome
+    -moz-transition: all 1s ease; //* Firefox
+    -ms-transition: all 1s ease; //* Opera
+    -o-transition: all 1s ease; // IE 9
     transition: all 1s ease;
   }
+
   .portfolio-block:hover img {
-    -webkit-transform: scale(1.25); /* Safari and Chrome */
-    -moz-transform: scale(1.25); /* Firefox */
-    -ms-transform: scale(1.25); /* IE 9 */
-    -o-transform: scale(1.25); /* Opera */
+    -webkit-transform: scale(1.25); //* Safari and Chrome
+    -moz-transform: scale(1.25); //* Firefox
+    -ms-transform: scale(1.25); //* IE 9
+    -o-transform: scale(1.25); //* Opera
     transform: scale(1.25);
   }
 }
-
 
 .carousel {
   max-height: 270px;
   overflow: hidden;
 
   .item img {
-    width: 90%;
     height: 270px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
   }
 }

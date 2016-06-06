@@ -7,7 +7,7 @@
       </div>
       <!--ToDo: add angular animation-->
       <div class="row triangles">
-        <div class="up-triangle animated fadeInUp">
+        <div class="up-triangle animated fadeInUp hidden-xs">
           <div class="info">
             <i class="icon icon-cogs"></i><br/>
             Bootstrap 3
@@ -19,31 +19,31 @@
             <i class="icon icon-envelope-alt"></i>
           </div>
         </div>
-        <div class="up-triangle animated fadeInUp">
+        <div class="up-triangle animated fadeInUp hidden-xs">
           <div class="info">
             <i class="icon icon-picture"></i><br/>
             Colorful
           </div>
         </div>
-        <div class="down-triangle animated fadeInDown">
+        <div class="down-triangle animated fadeInDown hidden-xs">
           <div class="info">
             Clean Code<br/>
             <i class="icon icon-code"></i>
           </div>
         </div>
-        <div class="down-triangle animated fadeInDown visible-sm">
+        <div class="down-triangle animated fadeInDown visible-sm hidden-xs">
           <div class="info">
             Clean Code<br/>
             <i class="icon icon-code"></i>
           </div>
         </div>
-        <div class="up-triangle animated fadeInUp">
+        <div class="up-triangle animated fadeInUp hidden-xs">
           <div class="info">
             <i class="icon icon-thumbs-up"></i><br/>
             Awesome
           </div>
         </div>
-        <div class="down-triangle animated fadeInDown">
+        <div class="down-triangle animated fadeInDown hidden-xs">
           <div class="info">
             Secure<br/>
             <i class="icon icon-laptop"></i>
@@ -108,7 +108,11 @@
       </div>
       <div class="col-lg-2 col-sm-4">
         <div class="hexicon">
-          <div class="inicon shopping"></div>
+          <div class="inicon shopping"
+            uib-popover="{{$ctrl.popoverShop.content}}"
+            popover-trigger="mouseenter"
+            popover-title="{{$ctrl.popoverShop.title}}">
+          </div>
         </div>
       </div>
       <div class="col-lg-2 col-sm-4">
@@ -117,7 +121,7 @@
             uib-popover="{{$ctrl.popoverCloud.content}}"
             popover-trigger="mouseenter"
             popover-title="{{$ctrl.popoverCloud.title}}"
-          ></div> 
+          ></div>
         </div>
       </div>
     </div>
@@ -286,28 +290,6 @@
                     <div class="testimonials-carousel slide animate_afr d5 animate_start"
                       id="testimonials-carousel">
                       <div class="carousel-inner">
-                        <div class="item">
-                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="testimonial item">
-                              <p>
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type.
-                              </p>
-                              <div class="testimonials-arrow">
-                              </div>
-                              <div class="author">
-                                <div class="testimonial-image "><img
-                                src="assets/images/team-member-1.jpg" alt=""></div>
-                                <div class="testimonial-author-info">
-                                  <a style="cursor: pointer;">Monica Sing</a> Template
-                                  Eden
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <div class="item active">
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="testimonial item">
@@ -323,29 +305,7 @@
                                 <div class="testimonial-image "><img
                                 src="assets/images/team-member-2.jpg" alt=""></div>
                                 <div class="testimonial-author-info">
-                                  <a href="#">John Doe</a> Template Eden
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="testimonial item">
-                              <p>
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type.
-                              </p>
-                              <div class="testimonials-arrow">
-                              </div>
-                              <div class="author">
-                                <div class="testimonial-image "><img
-                                src="assets/images/team-member-3.jpg" alt=""></div>
-                                <div class="testimonial-author-info">
-                                  <a style="cursor: pointer;">Carol Johansen</a>
-                                  Template Eden
+                                  <a href="#">John Doe</a> Happy Customer
                                 </div>
                               </div>
                             </div>

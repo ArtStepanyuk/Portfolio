@@ -9,7 +9,7 @@
             this.awesomeThings = [];
             this.myInterval = 3000;
             this.showLogIn = false;
-            // ToDo: move and fill up popover somewhere away
+            // ToDo: move and fill up popover somewhere away and we need much better pictures
             this.slides = [{
                 id: 1,
                 image: '../../assets/images/technologies/react_logo.png',
@@ -36,6 +36,10 @@
                 title: 'title'
             };
             this.popoverSupport = {
+                content: 'lorem',
+                title: 'title'
+            };
+            this.popoverShop = {
                 content: 'lorem',
                 title: 'title'
             };
