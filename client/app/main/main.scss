@@ -45,3 +45,13 @@ body {
   }
 }
 
+
+.carousel {
+  max-height: 270px;
+  overflow: hidden;
+
+  .item img {
+    width: 90%;
+    height: 270px;
+  }
+}
