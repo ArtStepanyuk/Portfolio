@@ -3636,7 +3636,7 @@ fieldset[disabled] .btn-primary.active {
   background: linear-gradient(
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.2)
-  ), url(../../assets/images/main-banner.jpg);
+  ), url(../../assets/images/mac.jpg);
   background-size: cover;
   color: #ffffff;
   padding: 0;
@@ -4126,6 +4126,7 @@ p.lead{
 .up-triangle,.down-triangle{
   float: left;
   margin-left: -100px;
+  opacity: 0.8;
 
 }
 
@@ -4136,10 +4137,6 @@ p.lead{
 @media (max-width: 980px) {
 
   .up-triangle,.down-triangle{
-    margin-bottom: 20px;
-    // border-bottom: 100px solid black;
-    // border-left: 66px solid transparent;
-    // border-right: 66px solid transparent;
   }
 
   .down-triangle:nth-child(5){
@@ -4161,28 +4158,6 @@ p.lead{
   }
 
 }
-
-// @media (max-width: 600px) {
-
-// .up-triangle {
-//   width: 0;
-//   height: 0;
-//   border-bottom: 200px solid black;
-//   border-left: 122px solid transparent;
-//   border-right: 122px solid transparent;
-//   position: relative;
-
-// }
-// .down-triangle {
-//   width: 0;
-//   height: 0;
-//   border-top: 200px solid black !important;
-//   border-left: 122px solid transparent !important;
-//   border-right: 122px solid transparent !important;
-//   position: relative;
-
-// }
-// }
 
 @media (max-width: 600px) {
   .up-triangle,.down-triangle{
@@ -5400,4 +5375,7 @@ p.lead{
 .tn-rss-alt:before {
   content: "\e75f";
 }
+
+
+
 

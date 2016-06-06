@@ -1,4 +1,14 @@
-#portfolio {
+body {
+  // background-color: #C3C3E5 !important;
+  // overflow: hidden; 
+  background-image: url(../../assets/images/bgMain.jpg)
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#portfolio {  
   img {
     max-width: 100%;
     display: block;
@@ -34,3 +44,4 @@
     transform: scale(1.25);
   }
 }
+
