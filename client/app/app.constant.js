@@ -16,7 +16,7 @@
 		"title": "Make it Fast"
 	},
 	"popoverSupport": {
-		"content": "The protection of people and data is increasingly is my  focus  when building your application.",
+		"content": "The protection of people and data is my  focus  when building your application. Making your information safe, protecting your sleep",
 		"title": "Security"
 	},
 	"popoverShop": {
