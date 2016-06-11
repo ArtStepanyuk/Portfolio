@@ -75,6 +75,7 @@
           <div class="inicon retina"
             uib-popover="{{$ctrl.popoverRetina.content}}"
             popover-trigger="mouseenter"
+            popover-append-to-body='true'
             popover-title="{{$ctrl.popoverRetina.title}}">
           </div>
         </div>
@@ -84,6 +85,7 @@
           <div class="inicon support"
             uib-popover="{{$ctrl.popoverSupport.content}}"
             popover-trigger="mouseenter"
+              popover-append-to-body='true'
             popover-title="{{$ctrl.popoverSupport.title}}">
           </div>
         </div>
@@ -93,6 +95,7 @@
           <div class="inicon speed"
             uib-popover="{{$ctrl.popoverSpeed.content}}"
             popover-trigger="mouseenter"
+            popover-append-to-body='true'
             popover-title="{{$ctrl.popoverSpeed.title}}"
           ></div>
         </div>
@@ -102,6 +105,7 @@
           <div class="inicon social"
             uib-popover="{{$ctrl.popoverSocial.content}}"
             popover-trigger="mouseenter"
+            popover-append-to-body='true'
           popover-title="{{$ctrl.popoverSocial.title}}"></div>
         </div>
       </div>
@@ -110,6 +114,7 @@
           <div class="inicon shopping"
             uib-popover="{{$ctrl.popoverShop.content}}"
             popover-trigger="mouseenter"
+            popover-append-to-body='true'
             popover-title="{{$ctrl.popoverShop.title}}">
           </div>
         </div>
@@ -119,6 +124,7 @@
           <div class="inicon cloud"
             uib-popover="{{$ctrl.popoverCloud.content}}"
             popover-trigger="mouseenter"
+            popover-append-to-body='true'
             popover-title="{{$ctrl.popoverCloud.title}}"
           ></div>
         </div>
@@ -291,10 +297,8 @@
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="testimonial item">
                               <p>
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type.
+                              <!-- ToDo: ng repeat or something else for switching feedbacks -->
+                                {{$ctrl.feedback[0].text}}
                               </p>
                               <div class="testimonials-arrow">
                               </div>
