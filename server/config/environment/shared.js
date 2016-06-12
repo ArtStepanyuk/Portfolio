@@ -30,10 +30,14 @@ exports = module.exports = {
     },
     // Feed back
     feedback: [{
-        image: "image",
+    	id : 1,
+    	name: 'Joanan Does',
+        image: "assets/images/team-member-1.jpg",
         text: "Dear Arthur Thank you for your help with the  project. It has been great working with you on this occasion. I hope to have the opportunity of working with you again in the near future."
     }, {
-        image: "image",
-        text: "test."
+    	id : 2,
+    	name: 'Joan Doe',
+        image: "assets/images/team-member-2.jpg",
+        text: "Arthur Thank you for Ffor helping us out. You are easy to work with, responsible and always thinking about project. Thanks you again"
     }]
 };

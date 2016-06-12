@@ -8,36 +8,40 @@
 		"admin"
 	],
 	"popoverRetina": {
-		"content": "Quality management is a discipline for ensuring that outputs, benefits, and the processes by which they are delivered, meet stakeholder requirements and are fit for purpose.",
+		"content": "Quality management is a discipline for ensuring that outputs, benefits, and the processes by which they are delivered meets stakeholder requirements and are fit for the purpose.",
 		"title": "Quality"
 	},
 	"popoverSpeed": {
-		"content": "Tired of waiting till your site loads? I will make it your product fast and easy to understand",
+		"content": "Tired of waiting for your site to load? Not a problem, I will turn your product to a fast, responsive, and user-friendly project.",
 		"title": "Make it Fast"
 	},
 	"popoverSupport": {
-		"content": "The protection of people and data is my  focus  when building your application. Making your information safe, protecting your sleep",
+		"content": "The protection of your data and privacy is imperative to me when building your application. Making your information safe and protecting your sleep",
 		"title": "Security"
 	},
 	"popoverShop": {
-		"content": "Tired of paying to much? Tired of hiring 5 people to do what one can? You will be pleasantly surprised by my rate",
+		"content": "Tired of paying too much? Tired of hiring 5 people to do what one can? You will be pleasantly surprised by my rate and speed",
 		"title": "Prices"
 	},
 	"popoverSocial": {
-		"content": "Need ability to login via your favorite social account? Want to share news about your product or let everyone know about it? I can do that too",
+		"content": "Need assistance in logging in to your favorite social media account? Want to share news about your product or let everyone know about it? Leave it all to me",
 		"title": "Make it Social"
 	},
 	"popoverCloud": {
-		"content": "Wether it is finished product or need for testing environment, I will give you way of accessing the product on heroku or any other option",
+		"content": "Whether it is finished product or need for testing environment, I can give you ways of accessing the product on heroku or any other option",
 		"title": "Deployment"
 	},
 	"feedback": [
 		{
-			"image": "image",
+			"id": 1,
+			"name": "John Doe",
+			"image": "assets/images/team-member-1.jpg",
 			"text": "Dear Arthur Thank you for your help with the  project. It has been great working with you on this occasion. I hope to have the opportunity of working with you again in the near future."
 		},
 		{
-			"image": "image",
+			"id": 2,
+			"name": "Joan Does",
+			"image": "assets/images/team-member-2.jpg",
 			"text": "test."
 		}
 	]

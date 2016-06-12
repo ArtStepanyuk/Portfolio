@@ -16,6 +16,7 @@
             this.feedback = appConfig.feedback;
             this.myInterval = 3000;
             this.showLogIn = false;
+            this.index = 0;
            
             this.slides = [{
                 id: 1,
@@ -57,6 +58,14 @@
             this.popoverCloud = {
                 content: this.popoverCloud.content,
                 title: this.popoverCloud.title
+            };
+
+            this.nextFeedback = function (id) {
+                if(id !== this.feedback.length) this.index = this.index +1;
+            };
+
+            this.previusFeedback = function (id) {
+                if(id !== 1) this.index = this.index -1;
             };
         }
 
