@@ -7,6 +7,9 @@ angular.module('portfolioApp')
       restrict: 'E',
       link: function(scope, element) {
         element.addClass('footer');
+      },
+      controller: function($scope) {
+      		$scope.copyright = new Date().getFullYear();
       }
     };
   });

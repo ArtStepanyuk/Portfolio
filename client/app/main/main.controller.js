@@ -97,22 +97,24 @@
             };
 
             this.changeFeedback = function (clicked) {
-            if (clicked === 'prev' && this.index !== 0) {
-              this.index--;
-            } else if (clicked === 'next' && this.index !== this.feedback.length -1) {
-              this.index++;
+              if (clicked === 'prev' && this.index !== 0) {
+                this.index--;
+              } else if (clicked === 'next' && this.index !== this.feedback.length -1) {
+                this.index++;
+              }
+            };
+
+            this.submitEmail = function(email) {
+              $http.post('/email', email)
+                .success(function(data, status) {
+                  // ? always end in error..even on succes
+                  console.log("Sent ok");
+                })
+                .error(function(data, status) {
+                  console.log("Error");
+                })
             }
-          };
-
-            // this.nextFeedback = function (id) {
-            //     if(id !== this.feedback.length) this.index = this.index +1;
-            // };
-            //
-            // this.previusFeedback = function (id) {
-            //     if(id !== 1) this.index = this.index -1;
-            // };
         }
-
     }
 
     angular.module('portfolioApp')

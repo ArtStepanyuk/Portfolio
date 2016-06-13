@@ -205,7 +205,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center inner-page">
-        <h2>Our Projects</h2>
+        <h2>Mine Projects</h2>
         <p>With a vision of what you want and my help we can realize your wildest dreams. Watch as I transform it to reality.</p>
       </div>
     </div>
@@ -298,27 +298,42 @@
         <div class="alert alert-error hidden" id="contactError">
           <strong>Error!</strong> There was an error sending your message.
         </div>
-        <h2 class="short"><strong>Contact</strong> Us</h2>
-        <form class="clearfix" accept-charset="utf-8" method="get" action="#">
+        <h2 class="short"><strong>Contact</strong> Me</h2>
+        <form class="clearfix" name="emailForm" novalidate>
           <div class="row">
             <div class="col-sm-6 form-group">
               <label for="name">Name</label>
-              <input type="text" placeholder="" value="" name="name" id="name"
-              class="form-control input-lg">
+              <input type="text"
+                     placeholder="What is your name?"
+                     ng-model="$ctrl.email.name"
+                     name="name"
+                     class="form-control input-lg"
+                     required>
             </div>
             <div class="col-sm-6 form-group">
               <label for="email">Email Address</label>
-              <input type="email" placeholder="" value="" name="email" id="email"
-              class="form-control input-lg">
+              <input type="email"
+                     placeholder="Please enter valid email"
+                     ng-model="$ctrl.email.email"
+                     name="email"
+                     class="form-control input-lg"
+                     required>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12 form-group">
               <label for="message">Message</label>
-              <textarea rows="4" name="message" id="message" class="form-control"></textarea>
+              <textarea rows="4"
+                        ng-model="$ctrl.email.text"
+                        name="message" 
+                        class="form-control"
+                        required>
+              </textarea>
             </div>
           </div>
-          <button class="btn btn-success btn-xlg" type="submit">Send Message</button>
+          <button class="btn btn-success btn-xlg" 
+                  ng-disabled="emailForm.$invalid"
+                  ng-click="$ctrl.submitEmail($ctrl.email)">Send Message</button>
         </form>
       </div>
       <div class="col-md-offset-1 col-md-5">
