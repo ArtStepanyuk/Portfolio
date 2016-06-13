@@ -4,7 +4,7 @@
 
     class MainController {
 
-        constructor($http, appConfig, Modal) {
+        constructor($http, appConfig) {
             this.$http = $http;
             this.popoverRetina = appConfig.popoverRetina;
             this.popoverSpeed = appConfig.popoverSpeed;
@@ -44,7 +44,7 @@
               },
               {
                 id: 7,
-                image: 'assets/images/projects/6.jpg'
+                image: 'assets/images/projects/7.jpg'
               },
               {
                 id: 8,
@@ -108,10 +108,11 @@
             this.submitEmail = function(email) {
               return $http.post('/email', email)
                 .then(function(data, status) {
-                    sweetAlert("Thank you for contacting me, I will respond as soon as i can");
+                  let message ="Thank you for contacting me, I will respond as soon as I can";
+                  sweetAlert(message);
                 })
                 .catch(function(data, status) {
-                  console.log("Err1or");
+                  console.log('error', status);
                 })
             }
         }
