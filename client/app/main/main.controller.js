@@ -4,7 +4,7 @@
 
     class MainController {
 
-        constructor($http, appConfig) {
+        constructor($http, appConfig, Modal) {
             this.$http = $http;
             this.popoverRetina = appConfig.popoverRetina;
             this.popoverSpeed = appConfig.popoverSpeed;
@@ -104,14 +104,14 @@
               }
             };
 
+
             this.submitEmail = function(email) {
-              $http.post('/email', email)
-                .success(function(data, status) {
-                  // ? always end in error..even on succes
-                  console.log("Sent ok");
+              return $http.post('/email', email)
+                .then(function(data, status) {
+                    sweetAlert("Thank you for contacting me, I will respond as soon as i can");
                 })
-                .error(function(data, status) {
-                  console.log("Error");
+                .catch(function(data, status) {
+                  console.log("Err1or");
                 })
             }
         }

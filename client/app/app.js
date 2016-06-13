@@ -9,7 +9,8 @@ angular.module('portfolioApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'validation.match'
+  'validation.match',
+  'oitozero.ngSweetAlert'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
