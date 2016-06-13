@@ -44,7 +44,7 @@
               },
               {
                 id: 7,
-                image: 'assets/images/projects/6.jpg'
+                image: 'assets/images/projects/7.jpg'
               },
               {
                 id: 8,
@@ -104,14 +104,15 @@
               }
             };
 
+
             this.submitEmail = function(email) {
-              $http.post('/email', email)
-                .success(function(data, status) {
-                  // ? always end in error..even on succes
-                  console.log("Sent ok");
+              return $http.post('/email', email)
+                .then(function(data, status) {
+                  let message ="Thank you for contacting me, I will respond as soon as I can";
+                  sweetAlert(message);
                 })
-                .error(function(data, status) {
-                  console.log("Error");
+                .catch(function(data, status) {
+                  console.log('error', status);
                 })
             }
         }

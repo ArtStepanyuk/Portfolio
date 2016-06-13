@@ -38,7 +38,9 @@ app.post('/email', function(req, res) {
           console.error(err);
         }
         console.log(json);
+        res.end();	
       })
+
 });
 
 var cors = require('cors');
