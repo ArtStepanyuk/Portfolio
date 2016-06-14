@@ -40,10 +40,6 @@
               },
               {
                 id: 6,
-                image: 'assets/images/projects/7.jpg'
-              },
-              {
-                id: 7,
                 image: 'assets/images/projects/6.jpg'
               },
               {
@@ -119,7 +115,7 @@
               return $http.post('/email', email)
                 .then(function () {
                   let msgMain = 'Thank you';
-                  let msgHelper = ' for contacting me I will respond ASAP';
+                  let msgHelper = ' For contacting me I will respond ASAP!';
                   sweetAlert(msgMain, msgHelper);
                 })
                 .catch(function (data, status) {
