@@ -40,6 +40,10 @@
               },
               {
                 id: 6,
+                image: 'assets/images/projects/7.jpg'
+              },
+              {
+                id: 7,
                 image: 'assets/images/projects/6.jpg'
               },
               {
@@ -105,19 +109,20 @@
               }
               else if(clicked === 'prev' && this.index !== 0) {
                 this.index--;
-              } 
+              }
               else if(clicked === 'next' && this.index !== this.feedback.length -1) {
                 this.index++;
               }
             };
 
-            this.submitEmail = function(email) {
+            this.submitEmail = function (email) {
               return $http.post('/email', email)
-                .then(function(data, status) {
-                  let message ="Thank you for contacting me, I will respond as soon as I can";
-                  sweetAlert(message);
+                .then(function () {
+                  let msgMain = 'Thank you';
+                  let msgHelper = ' for contacting me I will respond ASAP';
+                  sweetAlert(msgMain, msgHelper);
                 })
-                .catch(function(data, status) {
+                .catch(function (data, status) {
                   console.log('error', status);
                 })
             }

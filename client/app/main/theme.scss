@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana,Geneva,sans-serif;
+  font-family: Verdana,Geneva,sans-serif !important;
   font-size: 15px;
   line-height: 1.42857143;
   color: #2c3e50;
@@ -3409,15 +3409,6 @@ label.eden-radio:hover input[type=radio]:not(:checked) + span {
 label.eden-check input[type=checkbox]:checked + span,
 label.eden-radio input[type=radio]:checked + span {
   background: #18BC9C;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Arvo:400,700|Raleway:400,300,500|Open+Sans:400,700,900,300");
-
-*{
-  font-family: 'Raleway',serif;
-  font-weight: 300;
-
-  letter-spacing: 0.4px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
