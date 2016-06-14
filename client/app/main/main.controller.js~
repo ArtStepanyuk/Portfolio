@@ -4,7 +4,7 @@
 
     class MainController {
 
-        constructor($http, appConfig) {
+        constructor($http, appConfig, Modal) {
             this.$http = $http;
             this.popoverRetina = appConfig.popoverRetina;
             this.popoverSpeed = appConfig.popoverSpeed;
@@ -44,7 +44,7 @@
               },
               {
                 id: 7,
-                image: 'assets/images/projects/7.jpg'
+                image: 'assets/images/projects/6.jpg'
               },
               {
                 id: 8,
@@ -97,28 +97,21 @@
             };
 
             this.changeFeedback = function (clicked) {
-              if(clicked === 'prev' && this.index === 0) {
-                this.index = this.feedback.length -1;
-              }
-              else if(clicked === 'next' && this.index === this.feedback.length -1) {
-                this.index = 0;
-              }
-              else if(clicked === 'prev' && this.index !== 0) {
+              if (clicked === 'prev' && this.index !== 0) {
                 this.index--;
-              } 
-              else if(clicked === 'next' && this.index !== this.feedback.length -1) {
+              } else if (clicked === 'next' && this.index !== this.feedback.length -1) {
                 this.index++;
               }
             };
 
+
             this.submitEmail = function(email) {
               return $http.post('/email', email)
                 .then(function(data, status) {
-                  let message ="Thank you for contacting me, I will respond as soon as I can";
-                  sweetAlert(message);
+                    swal("Thank you for contacting me, I will respond as soon as i can");
                 })
                 .catch(function(data, status) {
-                  console.log('error', status);
+                  console.log("Err1or");
                 })
             }
         }
