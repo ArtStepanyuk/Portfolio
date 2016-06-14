@@ -299,7 +299,7 @@
           <strong>Error!</strong> There was an error sending your message.
         </div>
         <h2 class="short"><strong>Contact</strong> Me</h2>
-        <form class="clearfix" name="emailForm" novalidate>
+        <form class="clearfix" name="$ctrl.emailForm" novalidate>
           <div class="row">
             <div class="col-sm-6 form-group">
               <label for="name">Name</label>
@@ -325,14 +325,14 @@
               <label for="message">Message</label>
               <textarea rows="4"
                         ng-model="$ctrl.email.text"
-                        name="message" 
+                        name="message"
                         class="form-control"
                         required>
               </textarea>
             </div>
           </div>
-          <button class="btn btn-success btn-xlg" 
-                  ng-disabled="emailForm.$invalid"
+          <button class="btn btn-success btn-xlg"
+                  ng-disabled="$ctrl.emailForm.$invalid"
                   ng-click="$ctrl.submitEmail($ctrl.email)">Send Message</button>
         </form>
       </div>
@@ -346,7 +346,7 @@
         <ul class="unstyled">
           <li><i class="icon-map-marker"></i> <strong>Skype:</strong> lstepanyukl
           </li>
-          <li><i class="icon-phone"></i> <strong>Phone:</strong> (123) 456-7890</li>
+          <li><i class="icon-phone"></i> <strong>Phone:</strong> +(380) 0989882459</li>
           <li><i class="icon-envelope"></i> <strong>Email:</strong> <a href="mailto:lmasamunel1988@gmail.com">lmasamunel1988@gmail.com</a>
         </li>
       </ul>

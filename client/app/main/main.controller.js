@@ -16,6 +16,7 @@
             this.feedback = appConfig.feedback;
             this.myInterval = 3000;
             this.showLogIn = false;
+            this.emailForm = {};
             this.index = 0;
             this.projects = [
               {
@@ -39,7 +40,7 @@
                 image: 'assets/images/projects/5.jpg'
               },
               {
-                id: 6,
+                id:6,
                 image: 'assets/images/projects/6.jpg'
               },
               {
@@ -113,14 +114,14 @@
 
             this.submitEmail = function (email) {
               return $http.post('/email', email)
-                .then(function () {
+                .then(() => {
+                  this.email = {};
                   let msgMain = 'Thank you';
-                  let msgHelper = ' For contacting me I will respond ASAP!';
+                  let msgHelper = ' for contacting me I will respond ASAP';
                   sweetAlert(msgMain, msgHelper);
                 })
-                .catch(function (data, status) {
-                  console.log('error', status);
-                })
+                .catch((data, status) =>
+                  console.log('error', status))
             }
         }
     }
