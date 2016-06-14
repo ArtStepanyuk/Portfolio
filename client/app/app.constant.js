@@ -34,15 +34,21 @@
 	"feedback": [
 		{
 			"id": 1,
-			"name": "Joanan Does",
+			"name": "Abigail Willson",
 			"image": "assets/images/team-member-1.jpg",
 			"text": "Dear Arthur Thank you for your help with the  project. It has been great working with you on this occasion. I hope to have the opportunity of working with you again in the near future."
 		},
 		{
 			"id": 2,
-			"name": "Joan Doe",
+			"name": "Patrick Green",
 			"image": "assets/images/team-member-2.jpg",
-			"text": "Arthur Thank you for Ffor helping us out. You are easy to work with, responsible and always thinking about project. Thanks you again"
+			"text": "Arthur Thank you for for helping us out. You are easy to work with, responsible and always thinking about project.I hope we will have chance to work together again. Thanks you again"
+		},
+		{
+			"id": 3,
+			"name": "Katrin Johansen",
+			"image": "assets/images/team-member-3.jpg",
+			"text": "I want to express my deep appreciation for the help and support you have offered me on my recent project. Without your help, I would not have been able to complete the project."
 		}
 	]
 })
