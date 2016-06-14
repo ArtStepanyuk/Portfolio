@@ -40,7 +40,7 @@
                 image: 'assets/images/projects/5.jpg'
               },
               {
-                id:6,
+                id: 6,
                 image: 'assets/images/projects/6.jpg'
               },
               {
@@ -117,7 +117,7 @@
                 .then(() => {
                   this.email = {};
                   let msgMain = 'Thank you';
-                  let msgHelper = ' for contacting me I will respond ASAP';
+                  let msgHelper = 'For contacting me I will respond ASAP';
                   sweetAlert(msgMain, msgHelper);
                 })
                 .catch((data, status) =>
