@@ -21,7 +21,7 @@
             this.projects = [
               {
                 id: 1,
-                image: 'assets/images/projects/1.jpg'
+                image: 'assets/images/projects/9.jpg'
               },
               {
                 id: 2,
@@ -29,7 +29,7 @@
               },
               {
                 id: 3,
-                image: 'assets/images/projects/3.jpg'
+                image: 'assets/images/projects/27.jpg'
               },
               {
                 id: 4,
@@ -45,7 +45,7 @@
               },
               {
                 id: 7,
-                image: 'assets/images/projects/7.jpg'
+                image: 'assets/images/projects/25.jpg'
               },
               {
                 id: 8,

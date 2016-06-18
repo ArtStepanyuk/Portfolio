@@ -5,8 +5,8 @@ angular.module('portfolioApp')
     return {
       templateUrl: 'components/sidebar/sidebar.html',
       restrict: 'E',
-      controller: function ($window) {
-        $window.scrollTo(0, 0);
+      controller: function ($anchorScroll) {
+        $anchorScroll();
       }
     };
   });
