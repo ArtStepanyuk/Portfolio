@@ -4148,6 +4148,31 @@ p.lead{
   }
 }
 
+@media only screen and (min-width:996px) and (max-width: 1199px)  {
+  .res-hide {
+    display: none;
+  }
+  .up-triangle,.down-triangle{
+    margin-left:50px !important;
+  }
+  .icon-reorder{
+    color: #ffffff;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+  .up-triangle, .down-triangle {
+    margin-left: 150px !important;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 985px) {
+  #navbar-main > ul.nav.navbar-nav {
+    width: 100%;
+    padding-left: 70px;
+  }
+}
+
 
 .up-triangle {
   width: 0;
