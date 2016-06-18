@@ -1,0 +1,19 @@
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center inner-page">
+        <h2>My Projects</h2>
+        <p>With a vision of what you want and my help, we can realize your wildest dreams. Watch as I transform it to reality.</p>
+      </div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" ng-repeat="project in $ctrl.projects track by project.id">
+        <div class="portfolio-block"><img ng-src={{project.image}} alt="Protect" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

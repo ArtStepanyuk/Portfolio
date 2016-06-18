@@ -1,0 +1,68 @@
+<section class="about" id="clients">
+  <div class="dmask">
+    <div class="our-clients">
+      <div class="container">
+        <div class="row">
+          <div class="client" style="background-position: 50% 27px;">
+            <div class="client-logo">
+              <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                <div class="clients-title">
+                  <h3 class="title">Technology which I use</span></h3>
+                  <uib-carousel active="active" interval="$ctrl.myInterval">
+                    <uib-slide ng-repeat="slide in $ctrl.slides">
+                      <img ng-src="{{slide.image}}" style="margin:auto;">
+                      <div class="carousel-caption">
+                        <p>{{slide.text}}</p>
+                      </div>
+                    </uib-slide>
+                  </uib-carousel>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="row">
+                  <div class="testimonials widget">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="testimonials-title">
+                        <h3 class="title">Client <span>Testimonials</span></h3>
+                        <div class="carousel-controls pull-right">
+                          <i class="fa fa-chevron-left" aria-hidden="true"  ng-click="$ctrl.changeFeedback('prev')"></i>
+                          <i class="fa fa-chevron-right" aria-hidden="true"  ng-click="$ctrl.changeFeedback('next')"></i>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="testimonials-carousel slide animate_afr d5 animate_start"
+                         id="testimonials-carousel">
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="testimonial item">
+                              <p>
+                                {{$ctrl.feedback[$ctrl.index].text}}
+                              </p>
+                              <div class="testimonials-arrow">
+                              </div>
+                              <div class="author">
+                                <div class="testimonial-image ">
+                                  <img ng-src={{$ctrl.feedback[$ctrl.index].image}} alt="">
+                                </div>
+                                <div class="testimonial-author-info">
+                                  <a href="#">{{$ctrl.feedback[$ctrl.index].name}}</a> Happy Customer
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
