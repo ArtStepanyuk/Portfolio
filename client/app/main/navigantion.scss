@@ -1,0 +1,55 @@
+#snav ul { list-style: none; }
+
+#snav * {
+  color: white;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#snav li a {
+  background-color: black;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+#snav .fa {
+  vertical-align: middle;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+
+#snav li span {
+  font-size: 18px;
+  margin-left: 25px;
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+
+#snav li a:hover .fa { transform: rotate(720deg); }
+
+#snav li a:hover span { visibility: visible; }

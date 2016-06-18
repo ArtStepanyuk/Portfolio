@@ -121,8 +121,8 @@
                   sweetAlert(msgMain, msgHelper);
                 })
                 .catch((data, status) =>
-                  console.log('error', status))
-            }
+                  console.log('error', status));
+            };
         }
     }
 
