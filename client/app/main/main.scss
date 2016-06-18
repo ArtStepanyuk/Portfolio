@@ -65,12 +65,6 @@ body {
     background-size: cover;
   }
 }
-
-#snav {
-  position: fixed;
-  top: 20%;
-  z-index: 9999;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+.fa-chevron-left, .fa-chevron-right {
+  cursor: pointer;
 }
-
