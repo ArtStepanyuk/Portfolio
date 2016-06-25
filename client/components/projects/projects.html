@@ -9,11 +9,18 @@
   </div>
   <div class="clr"></div>
   <div class="container">
-    <div class="row">
+<!--     <div class="row">
       <div class="col-md-3" ng-repeat="project in $ctrl.projects track by project.id">
         <div class="portfolio-block"><img ng-src={{project.image}} alt="Protect" />
         </div>
       </div>
+    </div> -->
+
+  <div class="row">
+      <div class="col-md-3">
+        <ng-gallery images="$ctrl.projects"></ng-gallery>
+      </div>
+    </div>
     </div>
   </div>
 </section>

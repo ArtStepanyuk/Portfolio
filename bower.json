@@ -18,7 +18,8 @@
     "angular-validation-match": "~1.5.2",
     "animate.css": "^3.5.1",
     "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
-    "ngSweetAlert": "angular-sweetalert#^1.1.0"
+    "ngSweetAlert": "angular-sweetalert#^1.1.0",
+    "ngGallery": "*"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.0"

@@ -21,35 +21,43 @@
             this.projects = [
               {
                 id: 1,
-                image: 'assets/images/projects/9.jpg'
+                img: 'assets/images/projects/9.jpg',
+                thumb: 'assets/images/projects/9.jpg'
               },
               {
                 id: 2,
-                image: 'assets/images/projects/2.jpg'
+                img: 'assets/images/projects/2.jpg',
+                thumb: 'assets/images/projects/2.jpg'
               },
               {
                 id: 3,
-                image: 'assets/images/projects/27.jpg'
+                img: 'assets/images/projects/27.jpg',
+                thumb: 'assets/images/projects/27.jpg'
               },
               {
                 id: 4,
-                image: 'assets/images/projects/4.jpg'
+                img: 'assets/images/projects/4.jpg',
+                thumb: 'assets/images/projects/4.jpg'
               },
               {
                 id: 5,
-                image: 'assets/images/projects/5.jpg'
+                img: 'assets/images/projects/5.jpg',
+                thumb: 'assets/images/projects/5.jpg'
               },
               {
                 id: 6,
-                image: 'assets/images/projects/6.jpg'
+                img: 'assets/images/projects/6.jpg',
+                thumb: 'assets/images/projects/6.jpg'
               },
               {
                 id: 7,
-                image: 'assets/images/projects/25.jpg'
+                img: 'assets/images/projects/25.jpg',
+                thumb: 'assets/images/projects/25.jpg'
               },
               {
                 id: 8,
-                image: 'assets/images/projects/8.jpg'
+                img: 'assets/images/projects/8.jpg',
+                thumb: 'assets/images/projects/8.jpg'
               }
             ];
 
