@@ -4,105 +4,40 @@
 
     class MainController {
 
-        constructor($http, appConfig) {
+        constructor($http, appConfig, photoService, slidesService) {
             this.$http = $http;
-            this.popoverRetina = appConfig.popoverRetina;
-            this.popoverSpeed = appConfig.popoverSpeed;
-            this.popoverSupport = appConfig.popoverSupport;
-            this.popoverShop = appConfig.popoverShop;
-            this.popoverSocial = appConfig.popoverSocial;
-            this.popoverCloud = appConfig.popoverCloud;
-            this.popoverSpeed = appConfig.popoverSpeed;
             this.feedback = appConfig.feedback;
+            
             this.myInterval = 3000;
             this.showLogIn = false;
             this.emailForm = {};
             this.index = 0;
-            this.projects = [
-              {
-                id: 1,
-                img: 'assets/images/projects/9.jpg',
-                thumb: 'assets/images/projects/9.jpg'
-              },
-              {
-                id: 2,
-                img: 'assets/images/projects/2.jpg',
-                thumb: 'assets/images/projects/2.jpg'
-              },
-              {
-                id: 3,
-                img: 'assets/images/projects/27.jpg',
-                thumb: 'assets/images/projects/27.jpg'
-              },
-              {
-                id: 4,
-                img: 'assets/images/projects/4.jpg',
-                thumb: 'assets/images/projects/4.jpg'
-              },
-              {
-                id: 5,
-                img: 'assets/images/projects/5.jpg',
-                thumb: 'assets/images/projects/5.jpg'
-              },
-              {
-                id: 6,
-                img: 'assets/images/projects/6.jpg',
-                thumb: 'assets/images/projects/6.jpg'
-              },
-              {
-                id: 7,
-                img: 'assets/images/projects/25.jpg',
-                thumb: 'assets/images/projects/25.jpg'
-              },
-              {
-                id: 8,
-                img: 'assets/images/projects/8.jpg',
-                thumb: 'assets/images/projects/8.jpg'
-              }
-            ];
 
-            this.slides = [
-              {
-                id: 1,
-                image: '../../assets/images/technologies/react_logo.png',
-                text: 'A JAVASCRIPT LIBRARY for building interfaces'
-              }, {
-                id: 2,
-                image: '../../assets/images/technologies/angular_logo.png',
-                text: 'AngularJS — Superheroic JavaScript MVW Framework'
-              }, {
-                id: 3,
-                image: '../../assets/images/technologies/node_logo.png',
-                text: 'Event-driven I/O server-side JavaScript environment based on V8.'
-              }, {
-                id: 4,
-                image: '../../assets/images/technologies/sails.png',
-                text: 'Sails.js makes it easy and fast to build custom, enterprise-grade Node.js apps.'
-              }
-            ];
+            this.projects = photoService.getImages();
+            this.slides = slidesService.getSlides()
             this.popoverRetina = {
-                content: this.popoverRetina.content,
-                title: this.popoverRetina.title
+                content: appConfig.popoverRetina.content,
+                title: appConfig.popoverRetina.title
             };
             this.popoverSpeed = {
-                content: this.popoverSpeed.content,
-                title: this.popoverSpeed.title
+                content: appConfig.popoverSpeed.content,
+                title: appConfig.popoverSpeed.title
             };
             this.popoverSupport = {
-                content: this.popoverSupport.content,
-                title: this.popoverSupport.title
+                content: appConfig.popoverSupport.content,
+                title: appConfig.popoverSupport.title
             };
             this.popoverShop = {
-                content: this.popoverShop.content,
-                title: this.popoverShop.title
+                content: appConfig.popoverShop.content,
+                title: appConfig.popoverShop.title
             };
             this.popoverSocial = {
-                content: this.popoverSocial.content,
-                title: this.popoverSocial.title
+                content: appConfig.popoverSocial.content,
+                title: appConfig.popoverSocial.title
             };
             this.popoverCloud = {
-                content: this.popoverCloud.content,
-                title: this.popoverCloud.title
+                content: appConfig.popoverCloud.content,
+                title: appConfig.popoverCloud.title
             };
 
             this.changeFeedback = function (clicked) {
@@ -131,6 +66,8 @@
                 .catch((data, status) =>
                   console.log('error', status));
             };
+
+            console.log(this.projects);
         }
     }
 
