@@ -7,14 +7,15 @@
         constructor($http, appConfig, photoService, slidesService) {
             this.$http = $http;
             this.feedback = appConfig.feedback;
-            
+
             this.myInterval = 3000;
             this.showLogIn = false;
             this.emailForm = {};
             this.index = 0;
 
             this.projects = photoService.getImages();
-            this.slides = slidesService.getSlides()
+            this.slides = slidesService.getSlides();
+          
             this.popoverRetina = {
                 content: appConfig.popoverRetina.content,
                 title: appConfig.popoverRetina.title
@@ -67,7 +68,6 @@
                   console.log('error', status));
             };
 
-            console.log(this.projects);
         }
     }
 

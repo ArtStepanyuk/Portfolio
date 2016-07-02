@@ -27,9 +27,7 @@
                 text: 'Sails.js makes it easy and fast to build custom, enterprise-grade Node.js apps.'
               }
             ];
-
-        ////////////////
-
+      
         function getSlides() {
         	return slides;
         }

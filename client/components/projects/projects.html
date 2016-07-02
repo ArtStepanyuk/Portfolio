@@ -17,8 +17,11 @@
     </div> -->
 
   <div class="row">
-      <div class="col-md-3">
-        <ng-gallery images="$ctrl.projects"></ng-gallery>
+      <div>
+        <ng-gallery images="$ctrl.projects"
+                    template-url="components/projects/photoGallery.html">
+
+        </ng-gallery>
       </div>
     </div>
     </div>
