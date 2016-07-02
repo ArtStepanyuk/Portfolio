@@ -64,8 +64,32 @@ body {
   body {
     background-size: cover;
   }
-  #snav {
-    right: 0;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 12px !important;
+    #snav {
+      right: 0;
+      top: 50%;
+    }
+
+    .carousel .item {
+      img {
+        height: 200px;
+      }
+    }
+
+    #portfolio {
+      img {
+        display: block;
+
+        max-width: 70%;
+      }
+      .projects-description {
+        text-align: left;
+      }
+    }
   }
 }
 .fa-chevron-left, .fa-chevron-right {
