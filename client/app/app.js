@@ -10,7 +10,8 @@ angular.module('portfolioApp', [
   'ui.router',
   'ui.bootstrap',
   'validation.match',
-  'oitozero.ngSweetAlert'
+  'oitozero.ngSweetAlert',
+  'jkuri.gallery'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
