@@ -1,0 +1,67 @@
+body {
+  background: url('../../../client/assets/images/bg.jpg')  no-repeat center center fixed;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#portfolio {
+  margin-top: -5px;
+  img {
+    display: block;
+    cursor: zoom-in;
+    max-width: 100%;
+  }
+  .full-screen {
+    cursor: pointer;
+  }
+}
+
+
+
+.carousel {
+  max-height: 270px;
+  overflow: hidden;
+
+  .item img {
+    height: 270px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 12px !important;
+    #snav {
+      right: 0;
+      top: 50%;
+    }
+
+    .carousel .item {
+      img {
+        height: 200px;
+      }
+    }
+
+    #portfolio {
+      img {
+        display: block;
+
+        max-width: 70%;
+      }
+      .projects-description {
+        text-align: left;
+      }
+    }
+  }
+}
+.fa-chevron-left, .fa-chevron-right {
+  cursor: pointer;
+}
