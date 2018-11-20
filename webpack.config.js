@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './client/app.js',
+  entry: './client/app.ts',
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -24,11 +24,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'client/index.html',
       inject: 'body',
-      hash: false
+      hash: true
     }),
     new ngAnnotatePlugin({
       add: true,
-  }),
+  })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -38,8 +38,20 @@ module.exports = {
     historyApiFallback: true,
     watchContentBase: true
   },
+  resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ],
+    alias: {
+      "~assets": path.resolve(__dirname, 'client/assets/'),
+      // Templates: path.resolve(__dirname, 'src/templates/')
+    }
+  },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },
       {
         test: /\.scss$/,
         use: [

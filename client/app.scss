@@ -1,3 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import  './theme.scss';
 @import  './navigantion.scss';
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+@import  './directives/style.css';
+@import "~animate.css/source/_base.css";

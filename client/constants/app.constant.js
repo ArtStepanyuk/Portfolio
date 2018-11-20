@@ -1,12 +1,4 @@
-(function(angular, undefined) {
-  angular.module("portfolioApp.constants", [])
-
-.constant("appConfig", {
-	"userRoles": [
-		"guest",
-		"user",
-		"admin"
-	],
+export const appConfig= {
 	"popoverRetina": {
 		"content": "Quality management is a discipline for ensuring that outputs, benefits, and the processes by which they are delivered meets stakeholder requirements and are fit for the purpose.",
 		"title": "Quality"
@@ -35,23 +27,20 @@
 		{
 			"id": 1,
 			"name": "Abigail Wilson",
-			"image": "assets/images/team-member-1.jpg",
+			"image": require("~assets/images/team-member-1.jpg"),
 			"text": "Dear Arthur Thank you for your help with the  project. It has been great working with you on this occasion. I hope to have the opportunity of working with you again in the near future."
 		},
 		{
 			"id": 2,
 			"name": "Patrick Green",
-			"image": "assets/images/team-member-2.jpg",
+			"image": require("~assets/images/team-member-2.jpg"),
 			"text": "Arthur Thank you for for helping us out. You are easy to work with, responsible and always thinking about the project. I hope we will have a chance to work together again. Thank you again!"
 		},
 		{
 			"id": 3,
 			"name": "Katrina Johansen",
-			"image": "assets/images/team-member-3.jpg",
+			"image": require("~assets/images/team-member-3.jpg"),
 			"text": "I want to express my deep appreciation for the help and support you have offered me on my recent project. Without your help, I would have not been able to complete the project."
 		}
 	]
-})
-
-;
-})(angular);
+}

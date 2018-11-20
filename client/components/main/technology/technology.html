@@ -8,14 +8,14 @@
               <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="clients-title">
                   <h3 class="title">Technology which I use</span></h3>
-                  <uib-carousel active="active" interval="$ctrl.myInterval">
-                    <uib-slide ng-repeat="slide in $ctrl.slides">
-                      <img ng-src="{{slide.image}}" style="margin:auto;">
-                      <div class="carousel-caption">
-                        <p>{{slide.text}}</p>
-                      </div>
-                    </uib-slide>
-                  </uib-carousel>
+                  <div uib-carousel active="0" interval="$ctrl.myInterval">
+                    <div uib-slide ng-repeat="slide in $ctrl.slides track by slide.id" index="slide.id">
+                        <img ng-src="{{slide.image}}" style="margin:auto; max-height:305px">
+                        <div class="carousel-caption">
+                              <p>{{slide.text}}</p>
+                        </div>
+                    </div>
+               </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
