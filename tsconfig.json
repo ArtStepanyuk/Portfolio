@@ -1,12 +1,24 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
     "sourceMap": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "angular",
+      "node"
+  ],
+  },
+  "exclude": [
+      "node_modules",
+      "src/main.aot.ts"
+  ]
 }

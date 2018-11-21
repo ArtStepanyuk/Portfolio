@@ -6,7 +6,6 @@ export default class ServiceClass {
   popoverSocial: any;
   popoverCloud: any;
   constructor(appConfig: any) {
-    "ngInject";
     this.popoverRetina = {
       content: appConfig.popoverRetina.content,
       title: appConfig.popoverRetina.title
@@ -33,3 +32,5 @@ export default class ServiceClass {
     };
   }
 }
+
+ServiceClass.$inject = ['appConfig']

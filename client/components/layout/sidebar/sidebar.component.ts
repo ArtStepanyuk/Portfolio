@@ -1,9 +1,9 @@
-import template from './sidebar.html';
+
 import './sidebar.scss'
 
 let sidebarComponent = {
   bindings: {},
-  template
+  template: require('./sidebar.html')
 };
 
 export default sidebarComponent;

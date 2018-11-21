@@ -1,8 +1,8 @@
-import angular from 'angular';
-import Main from './main/main';
+import Layout from './layout/layout';
+import * as angular from 'angular'
 
 let componentModule = angular.module('app.components', [
-  Main
+  Layout
 ])
 .name;
 

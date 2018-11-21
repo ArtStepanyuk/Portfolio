@@ -1,8 +1,6 @@
-import template from './features.html';
-
 let featuresComponent = {
   bindings: {},
-  template
+  template: require('./features.html')
 };
 
 export default featuresComponent;

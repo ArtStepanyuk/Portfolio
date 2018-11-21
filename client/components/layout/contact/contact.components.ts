@@ -1,8 +1,6 @@
-import template from './contact.html';
-
 let contactComponent = {
   bindings: {},
-  template
+  template: require('./contact.html')
 };
 
 export default contactComponent;

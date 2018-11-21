@@ -1,24 +1,27 @@
 
-import angular from 'angular';
+
+import * as angular from 'angular'
 import uiRouter from '@uirouter/angularjs'
 import Common from './common/common';
-import uiBootstrap from 'angular-ui-bootstrap'
+import 'angular-ui-bootstrap'
 import Components from './components/components';
 import Services from './services/services'
 import AppComponent from './app.component';
 import { appConfig } from './constants/app.constant'
 
-
-angular.module('app', [
+const MODULE_NAME = 'app';
+angular.module(MODULE_NAME, [
   uiRouter,
-  uiBootstrap,
+  'ui.bootstrap',
   Common,
   Components,
   Services
 ])
-.config(($locationProvider: any) => {
-  "ngInject";
+.config(['$locationProvider',
+function($locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
-})
-.component('app', AppComponent)
+}])
+.component(MODULE_NAME, AppComponent)
 .constant('appConfig', appConfig)
+
+export default MODULE_NAME;

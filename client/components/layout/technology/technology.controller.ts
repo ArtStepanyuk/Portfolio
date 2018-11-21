@@ -4,7 +4,6 @@ export default class TechnologyController {
   slides: any;
   myInterval: Number;
   constructor(appConfig: any, slidesService: any) {
-    "ngInject";
     this.feedback = appConfig.feedback;
     this.index = 0;
     this.slides = slidesService.getSlides();
@@ -22,3 +21,6 @@ export default class TechnologyController {
     }
   }
 }
+
+
+TechnologyController.$inject = ['appConfig', 'slidesService']

@@ -1,10 +1,9 @@
-import template from './projects.html';
 import controller from './projects.controller'
 
 let projectsComponent = {
   bindings: {},
   controller,
-  template
+  template: require('./projects.html')
 };
 
 export default projectsComponent;

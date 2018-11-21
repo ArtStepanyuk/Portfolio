@@ -4,7 +4,6 @@ export default class ContactController {
   email: Object;
   $http: any;
   constructor($http: any) {
-    "ngInject";
     this.email = {};
     this.$http = $http;
   }

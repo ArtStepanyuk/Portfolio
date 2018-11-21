@@ -1,8 +1,6 @@
-import template from './home.html';
-
 let homeComponent = {
   bindings: {},
-  template
+  template: require('./home.html')
 };
 
 export default homeComponent;
