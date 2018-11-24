@@ -43,7 +43,7 @@
           </div>
           <button class="btn btn-success btn-xlg"
                   ng-disabled="$ctrl.emailForm.$invalid"
-                  ng-click="$ctrl.submitEmail($ctrl.email)">Send Message</button>
+                  ng-click="$ctrl.submitEmail($event, $ctrl.email)">Send Message</button>
         </form>
       </div>
       <div class="col-md-offset-1 col-md-5">
