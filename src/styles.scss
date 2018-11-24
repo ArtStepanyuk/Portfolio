@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import  './app/styles/theme.scss';
+@import  './app/styles/navigantion.scss';
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+@import  './app/directives/style.css';
+@import "~animate.css/source/_base.css";
+@import './app/styles/sidebar.scss'
