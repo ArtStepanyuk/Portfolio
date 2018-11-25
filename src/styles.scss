@@ -6,4 +6,10 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 @import  './app/directives/style.css';
 @import "~animate.css/source/_base.css";
-@import './app/styles/sidebar.scss'
+@import './app/styles/sidebar.scss';
+
+.carousel-inner  img {
+  width: auto;
+  height: 260px;
+  max-height: 260px;
+}

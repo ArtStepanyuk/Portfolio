@@ -1,6 +1,6 @@
 import controller from './navbar.controller'
 
-let NavbarComponent = {
+const NavbarComponent = {
   bindings: {},
   controller,
   template: require( './navbar.html')

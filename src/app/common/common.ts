@@ -4,13 +4,15 @@ import * as angular from 'angular'
 import Navbar from './navbar/navbar.component';
 import Footer from './footer/footer.component';
 import uiRouter from '@uirouter/angularjs';
+import { downgradeComponent } from '@angular/upgrade/static';
+import { NavbarComponent } from '../../app/components/ng2/navbar'
 
-// declare var angular: angular.IAngularStatic;
+const NavbarModule = angular.module('navbar', [uiRouter])
+  .directive('appNavbar', downgradeComponent({component: NavbarComponent}))
+  .name;
+const FooterModule = angular.module('footer', []).component('appFooter', Footer).name;
 
-let NavbarModule = angular.module('navbar', [uiRouter]).component('appNavbar', Navbar).name;
-let FooterModule = angular.module('footer', []).component('appFooter', Footer).name;
-
-let commonModule = angular.module('app.common', [
+const commonModule = angular.module('app.common', [
   NavbarModule,
   FooterModule
 ])

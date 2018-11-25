@@ -17,8 +17,8 @@ export default class ContactController {
       .post("/email", email)
       .then(() => {
         this.email = {};
-        let msgMain = "Thank you";
-        let msgHelper = "For contacting me I will respond ASAP";
+        const msgMain = "Thank you";
+        const msgHelper = "For contacting me I will respond ASAP";
         swal({
           title: msgMain,
           text: msgHelper,
@@ -29,4 +29,4 @@ export default class ContactController {
   }
 }
 
-ContactController.$inject = ['$http']
+ContactController.$inject = ["$http"];

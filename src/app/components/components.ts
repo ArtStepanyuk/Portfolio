@@ -1,8 +1,10 @@
-import Layout from './layout/layout';
-import * as angular from 'angular'
+import Layout from "./ng1/layout";
+import LayoutNG from "./ng2";
+import * as angular from "angular";
 
-let componentModule = angular.module('app.components', [
-  Layout
+const componentModule = angular.module("app.components", [
+  Layout,
+  LayoutNG
 ])
 .name;
 

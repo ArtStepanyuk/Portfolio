@@ -1,4 +1,4 @@
-import * as angular from 'angular'
+import * as angular from "angular";
 
 import layoutComponent from "./layout.component";
 import homeComponent from "./home/home.component";
@@ -9,21 +9,20 @@ import technologyComponent from "./technology/tecngology.component";
 import contactComponent from "./contact/contact.components";
 import sidebarComponent from "./sidebar/sidebar.component";
 import uiRouter from "@uirouter/angularjs";
-import { downgradeComponent } from '@angular/upgrade/static';
-import { ListComponent} from  '../ng2/list'
 import "./layout.scss";
-import '../../directives/ngGallery.js'
+import "../../directives/ngGallery.js";
 
-let LayoutModule = angular
+const LayoutModule = angular
   .module("main", [
     uiRouter,
-    'jkuri.gallery'
+    "jkuri.gallery"
   ])
-  .config(['$stateProvider', '$urlRouterProvider',
-  function($stateProvider, $urlRouterProvider) {
+  .config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
+  function($stateProvider, $urlRouterProvider,  $locationProvider) {
     $urlRouterProvider.otherwise("/");
-    $stateProvider.state("/", {
-      url: "/",
+    $locationProvider.html5Mode(true).hashPrefix("!");
+    $stateProvider.state("/ng1", {
+      url: "/ng1",
       component: "layout"
     });
   }])
@@ -34,8 +33,7 @@ let LayoutModule = angular
   .component("projects", projectsComponent)
   .component("technology", technologyComponent)
   .component("contact", contactComponent)
-  .component("appSidebar", sidebarComponent)
-  .directive("test", downgradeComponent({component: ListComponent})) // angular 2 component
+  .component("sidebar", sidebarComponent)
   .name;
 
 export default LayoutModule;

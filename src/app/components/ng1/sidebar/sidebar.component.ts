@@ -1,7 +1,6 @@
-let sidebarComponent = {
+const sidebarComponent = {
   bindings: {},
   template: require('./sidebar.html')
 };
 
 export default sidebarComponent;
-
